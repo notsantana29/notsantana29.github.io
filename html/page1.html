@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gross Earnings v. Meta Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Gross Earnings v. Meta Score</h1>
+        <button onclick="location.href='index.html'">Home</button>
+    </div>
+    <label for="decadeFilter">Choose a decade:</label>
+    <select id="decadeFilter">
+        <option value="all">All Decades</option>
+    </select>
+    <div class="container">
+        <div id="plot-container"></div>
+        <div id="legend-container"></div>
+        <div class="text-container">
+            <p>This data is pulling from the top 1000 rated movies on IMDB, so there may be some bias there, but from what we can see:</p>
+            <ul>
+                <li>Over the past 100 years there doesn't seem to be a strong correlation between a movie being highly rated and a movie having high gross earnings.</li>
+                <li>The maximum gross earnings a film has achieved has increased over time, and more and more films are getting to very high gross earnings.</li>
+                <li>The number of movies by decade increases in the dataset as time goes on, so there is likely a recency bias involved with ratings.</li>
+            </ul>
+            <p>So, are movies making more? And is there a recency bias?</p>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="page1.js"></script>
+    <div class="bottom-banner">
+        <button onclick="location.href='index.html'">Prev</button>
+        <button onclick="location.href='page2.html'">Next</button>
+    </div>
+</body>
+
+</html>

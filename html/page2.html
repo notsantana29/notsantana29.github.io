@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gross Earnings by Decade</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Gross Earnings by Decade</h1>
+        <button onclick="location.href='index.html'">Home</button>
+    </div>
+
+    <div class="container">
+        <div id="bar-container"></div>
+        <div class="text-container">
+            <ul>
+                <li>We can see the total gross earnings of these movies are definitely increasing as the decades go on, but we're also including a lot more movies from recent decades.</li>
+                <li>However, the highest grossing movie is increasing very sharply, but we're not accounting for inflation, so that is likely skewing things.</li>
+                <li>Regardless, it is an upward trend in gross earnings, but the average IMDB rating is staying pretty similar.</li>
+                <li>So movies may not be getting better or worse, but the market is still there and growing apparently.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="tooltip"></div>
+
+    <script src="page2.js"></script>
+    <div class="bottom-banner">
+        <button onclick="location.href='page1.html'">Prev</button>
+        <button onclick="location.href='page3.html'">Next</button>
+    </div>
+</body>
+
+</html>
