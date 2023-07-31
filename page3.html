@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count of Movies by Decade</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .line {
+            fill: none;
+            stroke-width: 2px;
+        }
+        .dot {
+            stroke: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Count of Movies by Decade</h1>
+        <button onclick="location.href='index.html'">Home</button>
+    </div>
+
+    <div class="container">
+        <div id="line-container"></div>
+        <div class="text-container">
+            <p>Looking at this chart:</p>
+            <ul>
+                <li>There does seem to be some recency bias. As the decades roll on, fewer and fewer movies maintain their spot in the 1000 highest rated movies, so only the best of the best, classics maintain their spot.</li>
+                <li>So there is a lot of bias to be considered, but the average earnings does seem to be rising decade by decade here too, albeit not accounting for inflation.</li>
+                <li>And, just like we saw before, the average rating is more or less staying the same, so movies aren't getting better or worse.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tooltip"></div>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="page3.js"></script>
+
+    <div class="bottom-banner">
+        <button onclick="location.href='page2.html'">Prev</button>
+        <button onclick="location.href='conclusion.html'">Next</button>
+    </div>
+</body>
+
+</html>
